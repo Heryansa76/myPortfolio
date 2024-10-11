@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            .slide-up {
+                opacity: 0;
+                transform: translateY(100px);
+                /* Mulai dari 100px di bawah */
+                visibility: visible;
+                animation: slideUp 1s ease-out forwards;
+            }
+
+            @keyframes slideUp {
+                0% {
+                    opacity: 0;
+                    transform: translateY(100px);
+                    /* Mulai di bawah */
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                    /* Berakhir di posisi aslinya */
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav
+            class="block top-0 w-full px-4 py-2 mx-auto bg-black bg-opacity-90 sticky shadow-lg lg:px-8 lg:py-3 backdrop-blur-lg backdrop-saturate-150 z-[9999]">
+            <div class="container flex flex-wrap items-center justify-between mx-auto text-slate-800">
+                <a href="#" class="mr-4 block cursor-pointer py-1.5 text-xl text-pink-500 font-bold">
+                    Heryansa Zefanya
+                </a>
+                <div class="hidden lg:block">
+                    <ul class="flex flex-col gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 ">
+                        <li class="flex items-center p-1 text-sm gap-x-2 text-slate-600 hover:font-bold">
+                            <a href="#profile" class="flex items-center text-pink-500">Profile</a>
+                        </li>
+                        <li class="flex items-center p-1 text-sm gap-x-2 text-slate-600 hover:font-bold">
+                            <a href="#skill" class="flex items-center text-pink-500">Skill</a>
+                        </li>
+                        <li class="flex items-center p-1 text-sm gap-x-2 text-slate-600 hover:font-bold">
+                            <a href="#project" class="flex items-center text-pink-500">Project</a>
+                        </li>
+                        <li class="flex items-center p-1 text-sm gap-x-2 text-slate-600 hover:font-bold">
+                            <a href="#contact" class="flex items-center text-pink-500">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <button
+                    class="relative ml-auto h-6 max-h-[40px] w-6 max-w-[40px] select-none rounded-lg text-center align-middle text-xs font-medium uppercase text-inherit transition-all hover:bg-transparent focus:bg-transparent active:bg-transparent disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:hidden"
+                    type="button">
+                    <span class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+        </nav>
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#ec4899" fill-opacity="1"
+                d="M0,224L120,218.7C240,213,480,203,720,208C960,213,1200,235,1320,245.3L1440,256L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z">
+            </path>
+        </svg> -->
+        <section class="hero py-16" id="profile">
+            <div class="container slide-up hidden">
+                <div class="flex flex-wrap flex-row max-w-full justify-center">
+                    <div class="w-full lg:w-1/5 px-6">
+                        <img src="foro1.jpg" alt="" class="rounded-2xl shadow-pink-600 shadow-md">
+                    </div>
+                    <div class="w-full lg:w-1/2 px-6 mt-10">
+                        <h1 class="text-3xl font-bold">Hello, </h1>
+                        <h1 class="text-4xl font-bold">I'm <span class="text-pink-600">Heryansa Zefanya
+                                Gunawan
+                            </span>
+                        </h1>
+                        <p class="mt-3 text-lg">
+                            I am a Computer Science fresh graduate from Bina Nusantara University. I was
+                            interested in tech and I have pretty good skills in programming and designing UI
+                            particularly in
+                            web programming, and I am always want to learn and eager to expand my knowledge and improve
+                            my abilities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skill" class="py-16">
+            <div class="container">
+                <div class="w-1/2 mb-10 mx-auto border-2 border-slate-500 rounded-2xl shadow-pink-500 shadow-md p-5">
+                    <div class="flex justify-center">
+                        <h1 class="text-4xl text-pink-500 font-bold mb-4">My Skill</h1>
+                    </div>
+                    <div class="flex justify-center p-0 font-semibold">
+                        <div class="grid grid-cols-1 lg:grid-cols-4 lg:gap-11 gap-4">
+                            <div class="text-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48">
+                                    <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
+                                    <path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
+                                    <path fill="#FFF"
+                                        d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z">
+                                    </path>
+                                    <path fill="#EEE"
+                                        d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z">
+                                    </path>
+                                </svg>
+                                HTML
+                            </div>
+                            <div class="text-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48">
+                                    <linearGradient id="TQDriqswrKwPOniLrPT12a_7gdY5qNXaKC0_gr1" x1="16.33" x2="32.293"
+                                        y1="-2.748" y2="41.109" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0" stop-color="#2aa4f4"></stop>
+                                        <stop offset="1" stop-color="#007ad9"></stop>
+                                    </linearGradient>
+                                    <path fill="url(#TQDriqswrKwPOniLrPT12a_7gdY5qNXaKC0_gr1)"
+                                        d="M7.192,7.176l2.627,29.77c0.109,1.237,0.97,2.28,2.164,2.621l10.643,3.041	c0.898,0.257,1.849,0.257,2.747,0l10.643-3.041c1.194-0.341,2.055-1.383,2.164-2.621l2.627-29.77C40.911,6.006,39.99,5,38.816,5	H9.184C8.01,5,7.089,6.006,7.192,7.176z">
+                                    </path>
+                                    <path fill="#35c1f1"
+                                        d="M24,8v31.9l9.876-2.822c0.797-0.228,1.371-0.924,1.443-1.749l2.286-26.242	C37.656,8.502,37.196,8,36.609,8H24z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M33.1,13H24v4h4.9l-0.3,4H24v4h4.4l-0.3,4.5L24,30.9v4.2l7.9-2.6L32.6,21l0,0L33.1,13z">
+                                    </path>
+                                    <path fill="#d6e0e9"
+                                        d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4	L19.8,27z">
+                                    </path>
+                                    <path
+                                        d="M33.1,13l-0.5,8l-0.7,11.5L24,35.1l-7.9-2.6L15.8,27h4l0.1,2.5l4.1,1.4l4.1-1.4l0.3-4.5H24h-4.4l-0.2-4H24h4.6l0.3-4H24 h-8.9l-0.3-4H24H33.1 M34.164,12H33.1H24h-9.2h-1.078l0.081,1.075l0.3,4L14.172,18H15.1H24h3.822l-0.15,2H24h-4.6h-1.051 l0.052,1.05l0.2,4L18.649,26H15.8h-1.056l0.058,1.054l0.3,5.5l0.037,0.682l0.649,0.214l7.9,2.6L24,36.153l0.313-0.103l7.9-2.6 l0.644-0.212l0.041-0.677l0.7-11.5l0.5-7.998L34.164,12L34.164,12z M20.761,26H24h3.331l-0.185,2.769L24,29.843l-3.128-1.068 l-0.073-1.815L20.761,26L20.761,26z"
+                                        opacity=".05"></path>
+                                    <path
+                                        d="M33.1,13l-0.5,8l-0.7,11.5L24,35.1l-7.9-2.6L15.8,27h4l0.1,2.5l4.1,1.4l4.1-1.4l0.3-4.5H24h-4.4l-0.2-4H24h4.6l0.3-4H24 h-8.9l-0.3-4H24H33.1 M33.632,12.5H33.1H24h-9.2h-0.539l0.04,0.537l0.3,4l0.035,0.463H15.1H24h4.361l-0.225,3H24h-4.6h-0.526 l0.026,0.525l0.2,4l0.024,0.475H19.6H24h3.866l-0.242,3.634L24,30.372l-3.614-1.234L20.3,26.98L20.28,26.5H19.8h-4h-0.528 l0.029,0.527l0.3,5.5l0.019,0.341l0.324,0.107l7.9,2.6L24,35.626l0.156-0.051l7.9-2.6l0.322-0.106l0.021-0.339l0.7-11.5l0.5-7.999 L33.632,12.5L33.632,12.5z"
+                                        opacity=".07"></path>
+                                </svg>
+                                CSS
+                            </div>
+                            <div class="text-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48">
+                                    <path fill="#ffd600" d="M6,42V6h36v36H6z"></path>
+                                    <path fill="#000001"
+                                        d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z">
+                                    </path>
+                                </svg>
+                                Javascript
+                            </div>
+                            <div class="text-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                                    viewBox="0 0 80 80">
+                                    <path fill="#dcd5f2"
+                                        d="M40,61.5C18.22,61.5,0.5,51.855,0.5,40S18.22,18.5,40,18.5S79.5,28.145,79.5,40S61.78,61.5,40,61.5z">
+                                    </path>
+                                    <path fill="#8b75a1"
+                                        d="M40,19c21.505,0,39,9.421,39,21S61.505,61,40,61S1,51.579,1,40S18.495,19,40,19 M40,18 C17.909,18,0,27.85,0,40s17.909,22,40,22s40-9.85,40-22S62.091,18,40,18L40,18z">
+                                    </path>
+                                    <path fill="#36404d"
+                                        d="M25.112 34c1.725 0 3.214.622 4.084 1.706.749.934.981 2.171.668 3.577C29.023 43.074 27.395 44 21.57 44h-4.14l1.75-10H25.112M25.112 32H17.5L14 52h2l1.056-6h4.515c5.863 0 9.053-.905 10.246-6.284C32.842 35.096 29.436 32 25.112 32L25.112 32zM61.112 34c1.725 0 3.214.622 4.084 1.706.749.934.981 2.171.668 3.577C65.023 43.074 63.395 44 57.57 44h-4.14l1.75-10H61.112M61.112 32H53.5L50 52h2l1.056-6h4.515c5.863 0 9.053-.905 10.246-6.284C68.842 35.096 65.436 32 61.112 32L61.112 32z">
+                                    </path>
+                                    <g>
+                                        <path fill="#36404d"
+                                            d="M49.072,33.212C48.193,32.348,46.644,32,44.334,32h-5.538L40,26h-2.1L34,46h1.99l2.388-12h0.419 h5.538c2.338,0,3.094,0.4,3.335,0.637c0.343,0.338,0.424,1.226,0.217,2.363l-1.767,9h2.106l1.626-8.63 C50.199,35.462,49.936,34.062,49.072,33.212z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                PHP
+                            </div>
+                            <div class="text-center">
+                                <svg viewBox="0 -.11376601 49.74245785 51.31690859" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="m49.626 11.564a.809.809 0 0 1 .028.209v10.972a.8.8 0 0 1 -.402.694l-9.209 5.302v10.509c0 .286-.152.55-.4.694l-19.223 11.066c-.044.025-.092.041-.14.058-.018.006-.035.017-.054.022a.805.805 0 0 1 -.41 0c-.022-.006-.042-.018-.063-.026-.044-.016-.09-.03-.132-.054l-19.219-11.066a.801.801 0 0 1 -.402-.694v-32.916c0-.072.01-.142.028-.21.006-.023.02-.044.028-.067.015-.042.029-.085.051-.124.015-.026.037-.047.055-.071.023-.032.044-.065.071-.093.023-.023.053-.04.079-.06.029-.024.055-.05.088-.069h.001l9.61-5.533a.802.802 0 0 1 .8 0l9.61 5.533h.002c.032.02.059.045.088.068.026.02.055.038.078.06.028.029.048.062.072.094.017.024.04.045.054.071.023.04.036.082.052.124.008.023.022.044.028.068a.809.809 0 0 1 .028.209v20.559l8.008-4.611v-10.51c0-.07.01-.141.028-.208.007-.024.02-.045.028-.068.016-.042.03-.085.052-.124.015-.026.037-.047.054-.071.024-.032.044-.065.072-.093.023-.023.052-.04.078-.06.03-.024.056-.05.088-.069h.001l9.611-5.533a.801.801 0 0 1 .8 0l9.61 5.533c.034.02.06.045.09.068.025.02.054.038.077.06.028.029.048.062.072.094.018.024.04.045.054.071.023.039.036.082.052.124.009.023.022.044.028.068zm-1.574 10.718v-9.124l-3.363 1.936-4.646 2.675v9.124l8.01-4.611zm-9.61 16.505v-9.13l-4.57 2.61-13.05 7.448v9.216zm-36.84-31.068v31.068l17.618 10.143v-9.214l-9.204-5.209-.003-.002-.004-.002c-.031-.018-.057-.044-.086-.066-.025-.02-.054-.036-.076-.058l-.002-.003c-.026-.025-.044-.056-.066-.084-.02-.027-.044-.05-.06-.078l-.001-.003c-.018-.03-.029-.066-.042-.1-.013-.03-.03-.058-.038-.09v-.001c-.01-.038-.012-.078-.016-.117-.004-.03-.012-.06-.012-.09v-21.483l-4.645-2.676-3.363-1.934zm8.81-5.994-8.007 4.609 8.005 4.609 8.006-4.61-8.006-4.608zm4.164 28.764 4.645-2.674v-20.096l-3.363 1.936-4.646 2.675v20.096zm24.667-23.325-8.006 4.609 8.006 4.609 8.005-4.61zm-.801 10.605-4.646-2.675-3.363-1.936v9.124l4.645 2.674 3.364 1.937zm-18.422 20.561 11.743-6.704 5.87-3.35-8-4.606-9.211 5.303-8.395 4.833z"
+                                        fill="#ff2d20" />
+                                </svg>
+                                Laravel
+                            </div>
+                            <div class="text-center">
+                                <svg viewBox="-8.78 0 70 70" xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                    xmlns:cc="http://creativecommons.org/ns#"
+                                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <metadata>
+                                        <rdf:RDF>
+                                            <cc:Work>
+                                                <dc:subject>
+                                                    Data
+                                                </dc:subject>
+                                                <dc:identifier>
+                                                    sql-database-generic
+                                                </dc:identifier>
+                                                <dc:title>
+                                                    SQL Database (Generic)
+                                                </dc:title>
+                                                <dc:format>
+                                                    image/svg+xml
+                                                </dc:format>
+                                                <dc:publisher>
+                                                    Amido Limited
+                                                </dc:publisher>
+                                                <dc:creator>
+                                                    Richard Slater
+                                                </dc:creator>
+                                                <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                            </cc:Work>
+                                        </rdf:RDF>
+                                    </metadata>
+                                    <path
+                                        d="m 852.97077,1013.9363 c -6.55238,-0.4723 -13.02857,-2.1216 -17.00034,-4.3296 -2.26232,-1.2576 -3.98589,-2.8032 -4.66223,-4.1807 l -0.4024,-0.8196 0,-25.70807 0,-25.7081 0.31843,-0.6465 c 1.42297,-2.889 5.96432,-5.4935 12.30378,-7.0562 2.15195,-0.5305 5.2586,-1.0588 7.79304,-1.3252 2.58797,-0.2721 9.44765,-0.2307 12.02919,0.073 6.86123,0.8061 12.69967,2.6108 16.29768,5.0377 1.38756,0.9359 2.81137,2.4334 3.29371,3.4642 l 0.41358,0.8838 -0.0354,25.6303 -0.0354,25.63047 -0.33195,0.6744 c -0.18257,0.3709 -0.73406,1.1007 -1.22553,1.6216 -2.99181,3.1715 -9.40919,5.5176 -17.8267,6.5172 -1.71567,0.2038 -9.16916,0.3686 -10.92937,0.2417 z m 12.07501,-22.02839 c -0.0252,-0.0657 -1.00472,-0.93831 -2.17671,-1.93922 -1.17199,-1.00091 -2.18138,-1.86687 -2.24309,-1.92436 -0.0617,-0.0575 0.15481,-0.26106 0.48117,-0.45237 0.32635,-0.19131 0.95163,-0.7235 1.3895,-1.18265 1.2805,-1.34272 1.88466,-3.00131 1.88466,-5.17388 0,-2.1388 -0.65162,-3.8645 -1.95671,-5.1818 -1.31533,-1.3278 -2.82554,-1.8983 -5.02486,-1.8983 -3.39007,0 -5.99368,1.9781 -6.82468,5.1851 -0.28586,1.1031 -0.28432,3.33211 0.003,4.31023 0.74941,2.55136 2.79044,4.40434 5.33062,4.83946 0.8596,0.14724 0.97605,0.21071 1.5621,0.85144 0.34829,0.38078 1.06301,1.14085 1.58827,1.68904 l 0.95501,0.9967 2.53878,0 c 1.39633,0 2.51816,-0.0537 2.49296,-0.11939 z m -8.70653,-7.10848 c -0.61119,-0.31868 -0.84225,-0.56599 -1.19079,-1.27453 -0.26919,-0.54724 -0.31522,-0.85851 -0.31824,-2.15197 -0.003,-1.3143 0.0388,-1.5983 0.31987,-2.169 0.45985,-0.9339 1.09355,-1.376 2.07384,-1.4469 1.36454,-0.099 2.15217,0.5707 2.56498,2.1801 0.50612,1.97321 -0.0504,4.07107 -1.26471,4.76729 -0.63707,0.36527 -1.58737,0.40659 -2.18495,0.095 z m -11.25315,3.66269 c 2.66179,-0.5048 4.1728,-2.0528 4.1728,-4.27495 0,-1.97137 -0.97548,-3.12004 -3.6716,-4.32364 -1.54338,-0.689 -2.10241,-1.1215 -2.10241,-1.6268 0,-0.4188 0.53052,-0.8777 1.14813,-0.993 0.60302,-0.1126 2.20237,0.1652 3.14683,0.5467 l 0.79167,0.3198 0,-1.7524 0,-1.7525 -0.85923,-0.1906 c -0.53103,-0.1178 -1.64689,-0.1885 -2.92137,-0.1849 -1.80528,0 -2.15881,0.044 -2.83818,0.3138 -1.98445,0.7878 -2.92613,2.1298 -2.91107,4.1485 0.0141,1.8898 1.01108,3.06864 3.49227,4.12912 1.46399,0.62572 2.05076,1.10218 2.05076,1.66522 0,1.1965 -1.99362,1.34375 -4.10437,0.30315 -0.57805,-0.28498 -1.09739,-0.54137 -1.1541,-0.56976 -0.0567,-0.0284 -0.10311,0.79023 -0.10311,1.81917 0,1.86239 0.002,1.87137 0.33919,1.99974 1.26979,0.48278 4.07626,0.69787 5.52379,0.42335 z m 30.4308,-1.72766 0,-1.58098 -2.40584,0 -2.40583,0 0,-5.43035 0,-5.4303 -2.13089,0 -2.13088,0 0,7.0113 0,7.01131 4.53672,0 4.53672,0 0,-1.58098 z m -14.84745,-27.70503 c 4.23447,-0.2937 7.4086,-0.8482 10.20178,-1.7821 2.78264,-0.9304 4.42643,-2.0562 4.79413,-3.2834 0.14166,-0.4729 0.13146,-0.6523 -0.0665,-1.1708 -0.88775,-2.3245 -5.84694,-4.1104 -13.42493,-4.8345 -3.24154,-0.3098 -9.13671,-0.2094 -12.22745,0.2081 -4.71604,0.6372 -8.54333,1.8208 -10.2451,3.1683 -3.44251,2.726 0.19793,5.7242 8.66397,7.1354 3.67084,0.6119 8.42674,0.828 12.30414,0.559 z"
+                                        fill="#00bcf2" transform="translate(-830.906 -943.981)" />
+                                </svg>
+                                SQL
+                            </div>
+                            <div class="text-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48">
+                                    <path fill="#21a366"
+                                        d="M24.007,45.419c-0.574,0-1.143-0.15-1.646-0.44l-5.24-3.103c-0.783-0.438-0.401-0.593-0.143-0.682	c1.044-0.365,1.255-0.448,2.369-1.081c0.117-0.067,0.27-0.043,0.39,0.028l4.026,2.389c0.145,0.079,0.352,0.079,0.486,0l15.697-9.061	c0.145-0.083,0.24-0.251,0.24-0.424V14.932c0-0.181-0.094-0.342-0.243-0.432L24.253,5.446c-0.145-0.086-0.338-0.086-0.483,0	L8.082,14.499c-0.152,0.086-0.249,0.255-0.249,0.428v18.114c0,0.173,0.094,0.338,0.244,0.42l4.299,2.483	c2.334,1.167,3.76-0.208,3.76-1.591V16.476c0-0.255,0.2-0.452,0.456-0.452h1.988c0.248,0,0.452,0.196,0.452,0.452v17.886	c0,3.112-1.697,4.9-4.648,4.9c-0.908,0-1.623,0-3.619-0.982l-4.118-2.373C5.629,35.317,5,34.216,5,33.042V14.928	c0-1.179,0.629-2.279,1.646-2.861L22.36,3.002c0.994-0.562,2.314-0.562,3.301,0l15.694,9.069C42.367,12.656,43,13.753,43,14.932	v18.114c0,1.175-0.633,2.271-1.646,2.861L25.66,44.971c-0.503,0.291-1.073,0.44-1.654,0.44">
+                                    </path>
+                                    <path fill="#21a366"
+                                        d="M28.856,32.937c-6.868,0-8.308-3.153-8.308-5.797c0-0.251,0.203-0.452,0.455-0.452h2.028	c0.224,0,0.413,0.163,0.448,0.384c0.306,2.066,1.218,3.108,5.371,3.108c3.308,0,4.715-0.747,4.715-2.502	c0-1.01-0.401-1.76-5.54-2.263c-4.299-0.424-6.955-1.371-6.955-4.809c0-3.167,2.672-5.053,7.147-5.053	c5.026,0,7.517,1.745,7.831,5.493c0.012,0.13-0.035,0.255-0.122,0.35c-0.086,0.09-0.208,0.145-0.334,0.145h-2.039	c-0.212,0-0.397-0.149-0.44-0.354c-0.491-2.173-1.678-2.868-4.904-2.868c-3.611,0-4.031,1.257-4.031,2.2	c0,1.143,0.495,1.477,5.367,2.122c4.825,0.64,7.116,1.544,7.116,4.935c0,3.418-2.853,5.379-7.827,5.379">
+                                    </path>
+                                </svg>
+                                Node js
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="project" class=" project py-16">
+            <div class="container">
+                <h1 class="text-center text-4xl text-pink-500 font-bold mb-5">Project</h1>
+                <div class="flex flex-wrap flex-row max-w-full justify-center mb-10">
+                    <div class="w-full lg:w-3/4 px-6 mb-5">
+                        <h1 class="text-3xl font-bold"><span class="text-pink-600"> Movie List
+                            </span>
+                        </h1>
+                        <p class="mt-3 text-lg">
+                            in this project I was making a website about movie list (movie database). In this website,
+                            people can find information
+                            about the Famous movie and know the actor who play it. This website enables the users to add
+                            the movie to their
+                            watchlist. I was build this website with laravel.
+                        </p>
+                    </div>
+                    <div class="w-full lg:w-2/5 px-6 mb-2">
+                        <img src="img/pageHomee.JPG" alt="" class="shadow-pink-500 shadow-md rounded-2xl">
+                    </div>
+                    <div class="w-full lg:w-2/5 px-6 mb-2">
+                        <img src="img/watchlist.JPG" alt="" class="shadow-pink-500 shadow-md rounded-2xl">
+                    </div>
+                </div>
+                <div class="flex flex-wrap flex-row max-w-full justify-center mb-10">
+                    <div class="w-full lg:w-3/4 px-6 mb-5">
+                        <h1 class="text-3xl font-bold"><span class="text-pink-600"> Esport Website
+                            </span>
+                        </h1>
+                        <p class="mt-3 text-lg">
+                            Project that I made to learn about tailwindcss. I was try to clonig the interface of an
+                            esport team website
+                            to my practice.
+                        </p>
+                    </div>
+                    <div class="w-full lg:w-2/5 px-6 mb-2">
+                        <img src="img/t1team2.png" alt="" class="shadow-pink-500 shadow-md rounded-2xl">
+                    </div>
+                    <div class="w-full lg:w-2/5 px-6 mb-2">
+                        <img src="img/t1team.png" alt="" class="shadow-pink-500 shadow-md rounded-2xl">
+                    </div>
+                </div>
+                <div class="flex flex-wrap flex-row max-w-full justify-center mb-10">
+                    <div class="w-full lg:w-3/4 px-6 mb-5">
+                        <h1 class="text-3xl font-bold"><span class="text-pink-600"> Bloodtrapeza
+                            </span>
+                        </h1>
+                        <p class="mt-3 text-lg">
+
+                        </p>
+                    </div>
+                    <div class="w-full lg:w-2/5 px-6 mb-2">
+                        <img src="img/bloodtrapeza.png" alt="" class="shadow-pink-500 shadow-md rounded-2xl">
+                    </div>
+                    <div class="w-full lg:w-2/5 px-6 mb-2">
+                        <img src="img/bloodtrapeza2.png" alt="" class="shadow-pink-500 shadow-md rounded-2xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer" id="contact">
+            <div class="container">
+                <div
+                    class=" z-10 inset-0 flex flex-col justify-start p-10 bg-gradient-to-r from-black to-pink-500 shadow-lg items-end">
+                    <div class="flex-col">
+                        <div class="flex flex-col items-start">
+                            <div class="flex px-2">
+                                <h1 class="text-xl lg:text-2xl font-semibold text-white">My Contact:</h1>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex flex-col items-start">
+                                <div class="flex items-center">
+                                    <div class="w-12 px-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48">
+                                            <path fill="#0288D1"
+                                                d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z">
+                                            </path>
+                                            <path fill="#FFF"
+                                                d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <a href="www.linkedin.com/in/heryansa-zefanya-gunawan-800b1a252"
+                                        class="text-white font-semibold">Heryansa
+                                        Zefanya
+                                        Gunawan</a>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-12 px-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48">
+                                            <path fill="#4caf50"
+                                                d="M45,16.2l-5,2.75l-5,4.75L35,40h7c1.657,0,3-1.343,3-3V16.2z">
+                                            </path>
+                                            <path fill="#1e88e5"
+                                                d="M3,16.2l3.614,1.71L13,23.7V40H6c-1.657,0-3-1.343-3-3V16.2z">
+                                            </path>
+                                            <polygon fill="#e53935"
+                                                points="35,11.2 24,19.45 13,11.2 12,17 13,23.7 24,31.95 35,23.7 36,17">
+                                            </polygon>
+                                            <path fill="#c62828"
+                                                d="M3,12.298V16.2l10,7.5V11.2L9.876,8.859C9.132,8.301,8.228,8,7.298,8h0C4.924,8,3,9.924,3,12.298z">
+                                            </path>
+                                            <path fill="#fbc02d"
+                                                d="M45,12.298V16.2l-10,7.5V11.2l3.124-2.341C38.868,8.301,39.772,8,40.702,8h0 C43.076,8,45,9.924,45,12.298z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <p class="text-white font-semibold"> heryansa76@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-start">
+                                <div class="flex items-center">
+                                    <div class="w-12 px-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48">
+                                            <radialGradient id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1" cx="19.38"
+                                                cy="42.035" r="44.899" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0" stop-color="#fd5"></stop>
+                                                <stop offset=".328" stop-color="#ff543f"></stop>
+                                                <stop offset=".348" stop-color="#fc5245"></stop>
+                                                <stop offset=".504" stop-color="#e64771"></stop>
+                                                <stop offset=".643" stop-color="#d53e91"></stop>
+                                                <stop offset=".761" stop-color="#cc39a4"></stop>
+                                                <stop offset=".841" stop-color="#c837ab"></stop>
+                                            </radialGradient>
+                                            <path fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)"
+                                                d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z">
+                                            </path>
+                                            <radialGradient id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2" cx="11.786"
+                                                cy="5.54" r="29.813" gradientTransform="matrix(1 0 0 .6663 0 1.849)"
+                                                gradientUnits="userSpaceOnUse">
+                                                <stop offset="0" stop-color="#4168c9"></stop>
+                                                <stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop>
+                                            </radialGradient>
+                                            <path fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)"
+                                                d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z">
+                                            </path>
+                                            <path fill="#fff"
+                                                d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z">
+                                            </path>
+                                            <circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle>
+                                            <path fill="#fff"
+                                                d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <a href="www.linkedin.com/in/heryansa-zefanya-gunawan-800b1a252"
+                                        class="text-white font-semibold">heryansa_z</a>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-12 px-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48">
+                                            <path fill="#fff"
+                                                d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z">
+                                            </path>
+                                            <path fill="#fff"
+                                                d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z">
+                                            </path>
+                                            <path fill="#cfd8dc"
+                                                d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z">
+                                            </path>
+                                            <path fill="#40c351"
+                                                d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z">
+                                            </path>
+                                            <path fill="#fff" fill-rule="evenodd"
+                                                d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </div>
+                                    <p class="text-white font-semibold">082138608380</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+    <script>
+        window.onload = function () {
+            const text = document.querySelector('.slide-up');
+            text.classList.remove('hidden'); // Menghapus class 'hidden' saat halaman di-load
+        }
+    </script>
+</html>
